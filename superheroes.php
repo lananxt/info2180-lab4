@@ -66,7 +66,7 @@ $superheroes = [
 $q =$_GET["q"];
 
 if (strlen($q) > 0){
-    $result = "<h3 style = 'color : red; font-weight: bold;'>SUPERHERO NOT FOUND</h3>";
+    $result = "<h3 style = 'color : red; font-weight: bold;'SUPERHERO NOT FOUND</h3>";
     for ($i = 0 ; $i < count($superheroes); $i++){
         if ($q === $superheroes[$i]["alias"] || $i === $superheroes[$i]["alias"]){
             $result = "<h3>".$superheroes[$i]["alias"]."</h3>"."\r\n"."<h4>A.K.A ".$superheroes[$i]["name"]."</h4>"."\r\n"."\r\n"."<p>".$superheroes[$i]["biography"]."/p";
